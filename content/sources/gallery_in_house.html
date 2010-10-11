@@ -15,8 +15,11 @@ images: [["IMG_4979", "IMG_4976", "IMG_4974", "IMG_4980", "IMG_0808"],
 
   <div style="clear:both"></div>
 
-  <div>
-    <a id="arr-prev" href="">prev</a>
+  <div class="scrolling_thumb">
+    <div class="arrow-prev">
+      <a id="arr-prev" href="">prev</a>
+    </div>
+
     <ul id="thumbnail">
       <% @item[:images].each do |images| %>
       <li>
@@ -26,7 +29,10 @@ images: [["IMG_4979", "IMG_4976", "IMG_4974", "IMG_4980", "IMG_0808"],
       </li>
       <% end %>
     </ul>
-    <a id="arr-next" href="">next</a>
+
+    <div class="arrow-next">
+      <a id="arr-next" href="">next</a>
+    </div>
   </div>
 </div>
 

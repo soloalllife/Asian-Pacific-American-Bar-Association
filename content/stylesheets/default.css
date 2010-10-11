@@ -97,11 +97,11 @@ span.small {
 }
 
 ul#thumbnail {
-  margin-top: 20px;
   width: 550px;
   height: 100px;
   overflow: hidden;
-  margin-left: 90px;
+  display: inline;
+  float: left;
 }
 
 ul#thumbnail li {
@@ -231,8 +231,6 @@ ul#thumbnail li {
 
 .greybox-home p {
   margin-top: 10px;
-  width: 840px;
-
 }
 
 /* Footer */
@@ -303,30 +301,18 @@ li.list-inline {
   height: 90px;
   background: url(../images/last-arr-right.png) 0 top;
   overflow: hidden;
-  margin-left: 5px;
-  margin-top: -100px;
-  margin-right: 25px;
-  float: right;
-  clear: none;
 }
-
 
 #arr-next:hover {
   background-position: 0 bottom;
 }
 
-
 #arr-prev {
   text-indent: -999em;
   width: 20px;
   height: 90px;
-  display: block;
   background: url(../images/last-arr-left.png) 0 top;
   overflow: hidden;
-  clear: none;
-  margin-top: 0px;
-  margin-right: 15px;
-  margin-left: 25px;
 }
 
 #arr-prev:hover {
@@ -474,9 +460,9 @@ ul.career-list li {
 
 #pres_message {
 	width: 730px;
-	float: right;
-	clear: none;
-	margin-top: -220px;
+	float: left;
+  display: inline;
+  margin-left: 20px;
 }
 
 #pres_message p {
@@ -485,5 +471,16 @@ ul.career-list li {
 
 .pres_pic {
 	float: left;
-	clear: left;
+  display: inline;
+  padding-top: 15px;
+}
+
+.arrow-next, .arrow-prev {
+  display: inline;
+  float: left;
+  margin: 5px 32px 0px 32px;
+}
+
+.scrolling_thumb {
+  margin-top: 20px;
 }
