@@ -1,0 +1,46 @@
+--- 
+title: Civil Rights
+main_nav: Committees
+
+boards: [["", "Joseph Mendoza", "Chair<br /><a href='mailto:Jmend14@hotmail.com' class='link-non-float'>Jmend14@hotmail.com</a>", ""]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">CIVIL RIGHTS COMMITTEE</h3>
+  <div style="clear:both"></div>
+
+  <% @item[:boards].each do |profile| %>
+  <div class="profile-section">
+    <div class="portrait">
+      <% if profile[0] == "" %>
+      <div class="fake-member-image">
+      </div>
+      <% else %>
+      <div>
+        <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+      </div>
+      <% end %>
+
+      <p>
+        <span class="highlight">
+          <%= profile[1] %>
+          <br />
+          <span class="small"><%= profile[2] %></span>
+        </span>
+      </p>
+    </div>
+
+    <div class="profile-detail">
+      <%= profile[3] %>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>
+  <% end %>
+</div>
+
+<div class="greybox">
+  <p>
+    The Civil Rights Commitee host events and otherwise provides support and leadership on issues that affect the civil and legal rights of the Asian American community.
+  </p>
+</div>

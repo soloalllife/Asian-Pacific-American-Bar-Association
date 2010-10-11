@@ -1,0 +1,79 @@
+##!/usr/bin/env ruby
+#
+## A few helpful tips about the Rules file:
+##
+## * The order of rules is important: for each item, only the first matching
+##   rule is applied.
+##
+## * Item identifiers start and end with a slash (e.g. “/about/” for the file
+##   “content/about.html”). To select all children, grandchildren, … of an
+##   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+##   because “*” matches zero or more characters.
+#
+compile '/stylesheets/*/' do
+  # don’t filter or layout
+end
+
+compile '/galleries/*/' do
+
+end
+
+compile '/documents/*/' do
+
+end
+
+compile '/images/*/' do
+
+end
+
+compile '/javascript/*/' do
+
+end
+
+compile '/sources/partials/*/' do
+
+end
+
+compile '/sources/*/' do
+  filter :erb
+  layout 'default'
+end
+
+compile '*' do
+  filter :erb
+  layout 'default'
+end
+
+route '/stylesheets/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/images/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/galleies/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/documents/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/javascript/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/sources/*/' do
+  '/' + item[:filename].gsub("content/sources/", "")
+end
+
+route '*' do
+  if item.binary?
+    item.identifier.chop + '.' + item[:extension]
+  else
+    item.identifier + 'index.html'
+  end
+end
+
+layout '*', :erb

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Asian Pacific American Bar Association - <%= @item[:title] %></title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/about.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/committees.css" />
+
+    <script type="text/javascript" src="javascript/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-easing.js"></script>
+    <script type="text/javascript" src="javascript/cufon-yui.js"></script>
+    <script type="text/javascript" src="javascript/Gotham.font.js"></script>
+    <script type="text/javascript">
+      Cufon.replace("#nav");
+      Cufon.replace("#sub_nav");
+      Cufon.replace(".main-header");
+      Cufon.replace(".paragraph-header");
+      Cufon.replace(".gotham-font");
+      Cufon.replace(".event-year");
+      Cufon.replace(".event-date");
+      Cufon.replace("h4.date");
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id='page_content'>
+        <%= render '_main_menu' %>
+
+        <div id="sub_menu">
+          <%= render '_about_sub_menu' if @item[:main_nav] == "About" %>
+          <%= render '_committees_sub_menu' if @item[:main_nav] == "Committees" %>
+          <%= render '_gallery_sub_menu' if @item[:main_nav] == "Gallery" %>
+        </div>
+
+        <div id="main_content">
+          <%= yield %>
+        </div>
+      </div>
+
+
+      <p id="footer">c/o Bijal V. Vakil &nbsp;&nbsp;|&nbsp;&nbsp; 3000 El Camino Real   &nbsp;&nbsp;|&nbsp;&nbsp;   5 Palo Alto Square, 9th Floor   &nbsp;&nbsp;|&nbsp;&nbsp;   Palo Alto   &nbsp;&nbsp;|&nbsp;&nbsp;   California 94306   &nbsp;&nbsp;|&nbsp;&nbsp;   T 650.213.0303   &nbsp;&nbsp;|&nbsp;&nbsp;   <a href="http://www.apabasv.org" class="link-non-float">www.apabasv.org</a></p>
+
+      <div style="clear:both"></div>
+
+    </div>
+
+    <p id="copyright">&#169; 2010 All Rights Reserved</p>
+    <script type="text/javascript"> Cufon.now(); </script>
+  </body>
+</html>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    sm_workslider();
+    sm_fade_transition();
+  });
+
+
+  function sm_workslider(){
+    // Lastest works slideshow
+    $('#thumbnail').cycle({
+      fx: 'scrollHorz',
+      easing: 'easeInOutQuad',
+      speed:  'slow',
+      timeout: 0,
+      next:   '#arr-next',
+      prev:   '#arr-prev'
+    });
+  }
+
+  function sm_fade_transition(){
+    $('#banner').cycle({
+      fx:     'fade',
+      speed:   3000,
+      timeout: 2000,
+      navigation: true,
+      next:   '#banner',
+      pause:   1
+    });
+  }
+
+  function changeImage(img)
+  {
+    $("#gallery-banner").animate({
+      opacity: 0
+    }, "slow", function() {
+      $("#gallery-banner").css("background", "url('" + img + "')");
+      $("#gallery-banner").animate({
+        opacity: 1
+      }, "slow");
+    });
+  }
+</script>
+

@@ -1,0 +1,56 @@
+--- 
+main_nav: About
+title: Past Presidents
+list: [["Rueben Chen", "Associate", "COOLEY, LLP", "2009"],
+["Sanjeet Dutta", "Of Counsel", "ORRICK, HERRINGTON & SUTCLIFFE, LLP", "2008"],
+["Thanh Ngo", "Deputy District Attorney", "SANTA CLARA COUNTY DISTRICT ATTORNEY'S OFFICE", "2007"],
+["Bijal Vakil", "Partner", "WHITE & CASE, LLP", "2006"],
+["Andrew Vu", "Assistant General Counsel", "SAP BUSINESS OBJECTS", "2005"],
+["Scott Chang", "Associate", "RELMAN & DANE, PLLC", "2004"],
+["Ivy Chen", "", "", "2003"],
+["Jeffrey Li", "Attorney at Law", "", "2002"],
+["Cammie Chen", "Partner", "McHUGH & CHEN", "2001"],
+["Steve L. Yep", "Commissioner", "", "2000"],
+["Julie Matsumoto", "Corporate Counsel", "APPLE, INC.", "1999"],
+["Erica Yew", "Judge", "SANTA CLARA COUNTY SUPERIOR COURT", "1998"],
+["James Der, Jr.", "Attorney at Law", "", "1997"],
+["Cammie Chen", "Partner", "McHUGH & CHEN", "1996"],
+["Jerry Fong", "Attorney at Law", "CAREY & CAREY", "1995"],
+["Linda McCulloh", "Senior Attorney", "JUDICIAL COUNCIL OF CALIFORNIA, ADMINISTRATIVE OFFICE OF THE COURTS", "1994"],
+["Cammie Chen", "Partner", "McHUGH & CHEN", "1993"],
+["Linda McCulloh", "Senior Attorney", "JUDICIAL COUNCIL OF CALIFORNIA, ADMINISTRATIVE OFFICE OF THE COURTS", "1992"],
+["Cammie Chen", "Partner", "McHUGH & CHEN", "1991"],
+["Linda McCulloh", "Senior Attorney", "JUDICIAL COUNCIL OF CALIFORNIA, ADMINISTRATIVE OFFICE OF THE COURTS", "1990"],
+["Cammie Chen", "Partner", "McHUGH & CHEN", "1989"],
+["Jacquelyn Maruhashi", "Staff Attorney", "ASIAN LAW ALLIANCE", "1988"],
+["Dannette Sakoda", "", "", "1987"],
+["Ed Oshika", "Attorney at Law", "", "1986"],
+["Grant Kolling", "Senior Assistant City Attorney", "PALO ALTO CITY ATTORNEY'S OFFICE", "1985"]]
+---
+
+<div class='white-box'>
+  <table id="past_president">
+    <thead>
+      <tr>
+        <th>PAST PRESIDENTS</th>
+        <th>YEAR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @item[:list].each do |president| %>
+      <tr>
+        <td>
+          <span class="highlight">
+            <%= president[0] %>
+            <br />
+            <span class="small"><%= president[1] %></span>
+          </span>
+          <br />
+          <span class="small"><%= president[2] %></span>
+        </td>
+        <td><%= president[3] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

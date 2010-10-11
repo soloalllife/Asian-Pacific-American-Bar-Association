@@ -1,0 +1,44 @@
+---
+title: Communication
+main_nav: Committees
+
+officers: [["", "Matthew Chen", "Co-Chair<br /><a href='mailto:mchen@mofo.com' class='link-non-float'>mchen@mofo.com</a>", "<p>Matthew Chen is an associate in the Litigation Department of Morrison & Foerster's Palo Alto office, where his practice focuses on patent and securities litigation.</p>"],
+["Sanjeet-Dutta", "Sanjeet Dutta", "Co-Chair<br /><a href='mailto:sdutta@orrick.com' class='link-non-float'>sdutta@orrick.com</a>", "<p>Sanjeet is a member of the Intellectual Property Group. Mr. Dutta's practice focuses on patent litigation, patent prosecution, licensing agreements and IP diligence and audits.</p>"]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">Communication COMMITTEE</h3>
+  <div style="clear:both"></div>
+
+  <div class='about-profile'>
+    <% @item[:officers].each do |profile| %>
+    <div class="profile-section">
+      <div class="portrait">
+        <% if profile[0] == "" %>
+        <div class="fake-member-image">
+        </div>
+        <% else %>
+        <div>
+          <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+        </div>
+        <% end %>
+
+        <p>
+          <span class="highlight">
+            <%= profile[1] %>
+            <br />
+            <span class="small"><%= profile[2] %></span>
+          </span>
+        </p>
+      </div>
+
+      <div class="profile-detail">
+        <%= profile[3] %>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+    <% end %>
+  </div>
+</div>
+

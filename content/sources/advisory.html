@@ -1,0 +1,55 @@
+--- 
+title: Strategic Advisory
+main_nav: Committees
+
+boards: [["Bijal-Vakil", "Bijal Vakil", "Co-Chair<br /><a href='mailto:bvakil@whitecase.com' class='link-non-float'>bvakil@whitecase.com</a>", "<p>Bijal is the Executive Partner in Charge of the White & Case's Silicon Valley office. He is an intellectual property partner whose practice focuses on intellectual property litigation, strategic counseling, and technology licensing. He has represented clients in intellectual property cases in numerous district courts, the International Trade Commission, and before the Federal Circuit. Mr. Vakil has litigated patent cases involving a variety of technologies, including plasma television, digital and analog integrated circuits, semiconductor manufacturing, software, computer systems, consumer electronics, and telecommunications (APABASV President 2006).</p>"],
+["Andrew-Vu", "Andrew Vu", "Co-Chair<br /><a href='mailto:Andrew.Vu@sap.com' class='link-non-float'>Andrew.Vu@sap.com</a>", "<p>Andrew is an Assistant General Counsel at SAP. Prior to working in house for 10 years, Andrew served as an Assistant District Attorney in San Francisco where he prosecuted and tried serious and violent felonies (APABASV President 2005).</p>"]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">STRATEGY ADVISORY COMMITTEE</h3>
+  <div style="clear:both"></div>
+
+  <div class='about-profile'>
+    <% @item[:boards].each do |profile| %>
+    <div class="profile-section">
+      <div class="portrait">
+        <div>
+          <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+        </div>
+        <p>
+          <span class="highlight">
+            <%= profile[1] %>
+            <br />
+            <span class="small"><%= profile[2] %></span>
+          </span>
+        </p>
+      </div>
+
+      <div class="profile-detail">
+        <%= profile[3] %>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+    <% end %>
+  </div>
+</div>
+
+<div class="greybox">
+  <p>
+    Comprised of past APABASV presidents and long serving Board Members the SAC focuses its efforts on advising the Board in key strategic initiatives, including the following four general areas:
+  </p>
+  <p>
+    1. Strategic Planning: planning for the future of APABASV and as well as key fundraising efforts for APABASV.
+  </p>
+  <p>
+    2. Nominations and Elections.
+  </p>
+  <p>
+    3. Leadership Development: SAC partners with the board and local affiliates in developing the future leaders of APABASV.
+  </p>
+  <p>
+    4. Outreach: serve as ambassadors for APABASV in the local communities and other minority bar associations.
+  </p>
+</div>

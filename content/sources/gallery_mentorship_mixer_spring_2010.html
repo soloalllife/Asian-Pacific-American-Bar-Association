@@ -1,0 +1,35 @@
+--- 
+title: Mentorship Mixer Spring 2010
+main_nav: Gallery
+
+images: [["P1010753", "P1010743", "P1010746", "36319_10150191145145456_798395455_13158561_3679134_n", "36319_10150191145060456_798395455_13158554_279368_n"],
+["36319_10150191145075456_798395455_13158556_2138736_n", "36319_10150191145090456_798395455_13158557_7716945_n", "36319_10150191145150456_798395455_13158562_4654150_n", "36319_10150191145160456_798395455_13158563_2419261_n", "36319_10150191145345456_798395455_13158575_456251_n"],
+["36319_10150191145360456_798395455_13158576_7126343_n", "36319_10150191145365456_798395455_13158577_6096468_n", "36319_10150191145380456_798395455_13158579_1410774_n", 36319_10150191145415456_798395455_13158584_7387471_n", "36319_10150191145445456_798395455_13158586_7848280_n"],
+["36319_10150191145470456_798395455_13158588_7282904_n", "36319_10150191145475456_798395455_13158589_1623987_n"]]
+
+---
+<div id="gallery" class='white-box'>
+  <div id='gallery-banner'></div>
+
+  <div style="clear:both"></div>
+
+  <div>
+    <a id="arr-prev" href="">prev</a>
+    <ul id="thumbnail">
+      <% @item[:images].each do |images| %>
+      <li>
+        <% images.each do |image| %>
+        <div class="mini-thumbnail" style='background: url("galleries/Mentorship-Mixer-Spring-2010/<%= image %>_thumbnail.gif");' onclick="changeImage('galleries/Mentorship-Mixer-Spring-2010/<%= image %>.jpg')"></div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+    <a id="arr-next" href="">next</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    changeImage('galleries/Mentorship-Mixer-Spring-2010/<%= @item[:images][0][0] %>.jpg');
+  });
+</script>

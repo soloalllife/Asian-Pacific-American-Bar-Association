@@ -1,0 +1,40 @@
+--- 
+title: Annual Banquet 2009
+main_nav: Gallery
+
+images: [["IMG_001", "IMG_002", "IMG_003", "IMG_004", "IMG_005"],
+["IMG_006", "IMG_007", "IMG_008", "IMG_009", "IMG_010"],
+["IMG_011", "IMG_012", "IMG_013", "IMG_014", "IMG_015"],
+["IMG_016", "IMG_017", "IMG_018", "IMG_019", "IMG_020"],
+["IMG_021", "IMG_022", "IMG_023", "IMG_024", "IMG_025"],
+["IMG_026", "IMG_027", "IMG_028", "IMG_029", "IMG_030"],
+["IMG_031", "IMG_032", "IMG_033", "IMG_034", "IMG_035"],
+["IMG_036", "IMG_037", "IMG_038", "IMG_039", "IMG_040"],
+["IMG_041", "IMG_042", "IMG_043", "IMG_044", "IMG_045"],
+["IMG_046", "IMG_047", "IMG_048"]]
+---
+<div id="gallery" class='white-box'>
+  <div id='gallery-banner'></div>
+
+  <div style="clear:both"></div>
+
+  <div>
+    <a id="arr-prev" href="">prev</a>
+    <ul id="thumbnail">
+      <% @item[:images].each do |images| %>
+      <li>
+        <% images.each do |image| %>
+        <div class="mini-thumbnail" style='background: url("galleries/2009-Banquet/<%= image %>_thumbnail.gif");' onclick="changeImage('galleries/2009-Banquet/<%= image %>.jpg')"></div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+    <a id="arr-next" href="">next</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    changeImage('galleries/2009-Banquet/<%= @item[:images][0][0] %>.jpg');
+  });
+</script>

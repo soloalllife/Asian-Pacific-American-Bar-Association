@@ -1,0 +1,68 @@
+---
+title: Membership
+main_nav: Committees
+officers: [["Rita-Chan", "Rita Chan", "Co-Chair<br /><a href='mailto:rita_s_chan@yahoo.com' class='link-non-float'>rita_s_chan@yahoo.com</a>", "<p>Rita is an Assistant District Counsel at the Santa Clara Valley Water District where she practices environmental and land use law. Prior to joining the Water District, she was an associate at Pillsbury Winthrop Shaw Pittman.</p><p>Rita received her J.D. from Santa Clara University School of Law and her B.S. and M.S. in Civil Engineering from UCLA and Stanford University respectively.</p>"],
+["Brandon-Kimura", "Brandon Kimura", "Co-Chair<br /><a href='mailto:bkimura@cooley.com' class='link-non-float'>bkimura@cooley.com</a>", "<p>Brandon is an associate in Cooley's Litigation department. His practice involves general civil litigation matters in federal and state courts covering a variety of areas, including commercial contracts, antitrust and business crimes. Brandon earned his J.D. from Santa Clara School of and a B.A. in both Political Science and American History from the University of Hawaii at Hilo.</p>"]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">Membership COMMITTEE</h3>
+
+  <div class='about-profile'>
+    <% @item[:officers].each do |profile| %>
+    <div class="profile-section">
+      <div class="portrait">
+        <div>
+          <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+        </div>
+        <p>
+          <span class="highlight">
+            <%= profile[1] %>
+            <br />
+            <span class="small"><%= profile[2] %></span>
+          </span>
+        </p>
+      </div>
+
+      <div class="profile-detail">
+        <%= profile[3] %>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+    <% end %>
+  </div>
+</div>
+
+<div class="greybox">
+  <p>
+    The Membership Committee is dedicated to expanding the APABASV Silicon Valley's membership base. This includes sponsoring membership drives, advertising special enrollment incentives, and processing membership applications.
+  </p>
+  <p>
+    We hope that you will become an active member of APABASV Silicon Valley and help us develop and assist the legal community and those in need.
+  </p>
+  <p>
+    APABASV Silicon Valley has made recruitment a point of emphasis for 2010. The Membership Committee has responded by actively advertising and recruiting new members through networking events and two membership drives which has resulted in an increase of approximately 40 new members.
+  </p>
+  <p>
+    The Membership Committee is dedicated to expanding the APABASV Silicon Valley's membership base. This includes sponsoring membership drives, advertising special enrollment incentives, and processing membership applications.We hope that you will become an active member of APABASV Silicon Valley and help us develop and assist the legal community and those in need.
+  </p>
+
+  <p>&nbsp;</p>
+  <h3 class="paragraph-header">Join / Renew Now:</h3>
+  <p>
+    <a class="link-non-float" href="https://www.123signup.com/servlet/SignUp?PG=1520548182200&P=152054800">Sign up</a> to be a member today (including life-time membership!)
+  </p>
+  <p>&nbsp;</p>
+
+  <h3 class="paragraph-header">Current Members:</h3>
+  <p>
+    <a class="link-non-float" href="https://www.123signup.com/renew?Org=apbasv">Renew</a> your membership today
+  </p>
+  <p>
+    Edit your <a class="link-non-float" href="https://www.123signup.com/profile?Org=apbasv">profile</a>
+  </p>
+  <p>
+    <a class="link-non-float" href="https://www.123signup.com/calendar?Org=apbasv">Register</a> for upcoming events sponsored by APBA
+  </p>
+</div>

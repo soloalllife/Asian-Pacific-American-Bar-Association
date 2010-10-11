@@ -1,0 +1,71 @@
+---
+title: Social / Banquet
+main_nav: Committees
+officers: [["", "Matthew Chen", "Co-Chair<br /><a href='mailto:mchen@mofo.com' class='link-non-float'>mchen@mofo.com</a>", "<p>Matthew Chen is an associate in the Litigation Department of Morrison & Foerster's Palo Alto office, where his practice focuses on patent and securities litigation.</p>"],
+["Dennis-Chin", "Dennis Chin", "Co-Chair<br /><a href='mailto:Dchin2@gmail.com' class='link-non-float'>Dchin2@gmail.com</a>", "<p>Dennis is an Associate Professor at California State University East Bay and teaches legal ethics. He was a recipient of the California State Bar Wiley M. Manuel Award in 2006 and 2007 and a nominee for the California Young Lawyer's Jack Berman Award in 2007 and 2009. In 2009, the Alameda County Bar Association honored him with the Distinguished Service Award for a Barrister.</p>"]]
+
+---
+
+<div class='white-box'>
+  <h3 class="main-header">SOCIAL/BANQUET COMMITTEE</h3>
+
+  <div class='about-profile'>
+    <% @item[:officers].each do |profile| %>
+    <div class="profile-section">
+      <div class="portrait">
+        <% if profile[0] == "" %>
+        <div class="fake-member-image">
+        </div>
+        <% else %>
+        <div>
+          <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+        </div>
+        <% end %>
+
+        <p>
+          <span class="highlight">
+            <%= profile[1] %>
+            <br />
+            <span class="small"><%= profile[2] %></span>
+          </span>
+        </p>
+      </div>
+
+      <div class="profile-detail">
+        <%= profile[3] %>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+    <% end %>
+  </div>
+</div>
+
+<div class="greybox">
+  <p>
+    The Social Committee sponsors social and networking events in order to promote both personal and professional relationships among APBASV members and other minority bar organizations. In the past, the Committee has organized student-attorney mixers, planned happy hour gatherings, and co-hosted picnics with other minority bar organizations. The Committee generally schedules events on a quarterly basis.
+  </p>
+
+  <p>&nbsp;</p>
+  <h3 class="paragraph-header">Welcome Message</h3>
+  <p>
+    Dear APBASV Members,
+  </p>
+  <p>
+    We would like to welcome you to the Social Committee. Joining the Committee is a great way to network with local judges and attorneys, develop leadership skills, and keep informed on the latest issues in the APA legal community. In the past year, the Committee has organized happy-hour events and bocce ball outings. This fall, the Committee is assisting with the coordination of the NAPABA Affiliates picnic. The Committee intends to diversify the events in the future, such as possibly attending a San Jose Sharks game. Come and get involved! For more information about the Social Committee, please contact Matthew Chen or Dennis Chin.
+  </p>
+  <p>
+    All the best,
+  </p>
+  <p>
+    Matthew Chen, <a href="mailto:mchen@mofo.com" class="link-non-float">mchen@mofo.com</a>
+  </p>
+  <p>
+    Dennis Chin, <a href="mailto:dchin2@gmail.com" class="link-non-float">dchin2@gmail.com</a>
+  </p>
+  <p>&nbsp;</p>
+  <h3 class="paragraph-header">Upcoming Calendar of Events</h3>
+  <p>
+    APBASV will be co-hosting a NAPABA Affiliates picnic on October 9, 2010. Check back in the future for more details.
+  </p>
+</div>

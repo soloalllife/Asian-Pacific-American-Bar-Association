@@ -1,0 +1,75 @@
+---
+title: Community Service
+main_nav: Committees
+
+boards: [["", "Joy Su", "Co-Chair<br /><a href='mailto:Joy.su@skadden.com' class='link-non-float'>Joy.su@skadden.com</a>", ""],
+["", "Jennie Kim", "Co-Chair<br /><a href='mailto:jenniehkim@gmail.com' class='link-non-float'>jenniehkim@gmail.com</a>", ""]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">COMMUNITY SERVICE COMMITTEE</h3>
+  <div style="clear:both"></div>
+
+  <% @item[:boards].each do |profile| %>
+  <div class="profile-section">
+    <div class="portrait">
+      <% if profile[0] == "" %>
+      <div class="fake-member-image">
+      </div>
+      <% else %>
+      <div>
+        <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+      </div>
+      <% end %>
+
+      <p>
+        <span class="highlight">
+          <%= profile[1] %>
+          <br />
+          <span class="small"><%= profile[2] %></span>
+        </span>
+      </p>
+    </div>
+
+    <div class="profile-detail">
+      <%= profile[3] %>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>
+  <% end %>
+</div>
+
+
+<div class="greybox">
+  <p>The Community Service Committee works with Asian American and other community organizations to provide information about volunteer opportunities and to recruit volunteers for both one-time events and ongoing support for organizations. The Committee previously worked with The Santa Clara County Citizenship Collaborative and the AILA Santa Clara Valley Chapter to promote and recruit volunteers for Citizenship Day. Citizenship Day provided free orientations to those interested in applying for citizenship. Volunteer attorneys provided free legal screenings for individuals with legal problems that may affect their eligibility, assistance with fee waivers, and referral to potential programs for payment of the filing fees required to apply for citizenship. The Community Service Committee has also recruited volunteers to work with the Asian Women's Shelter in San Francisco and the Asian Women's Home in San Jose.</p>
+  <p>Please see below for current volunteer opportunities:</p>
+
+  <p>&nbsp;</p>
+  <h3 class="paragraph-header">
+    Asian Women's Home
+  </h3>
+  <p>Asian Americans for Community Involvement (AACI), Santa Clara County's largest community-based organization focused on the Asian American community, is seeking volunteer attorneys to assist clients of their Domestic Violence Program. AACI provides the only shelter for battered women in Santa Clara County that focuses on the Asian American population of Santa Clara County.</p>
+  <p>Although there are many legal aid services that provide restraining order and other legal assistance, AACI has a particular need for pro bono attorneys who are familiar with Asian languages and cultures. AACI's clients are extremely low income and face multiple linguistic and cultural barriers. AACI's greatest need is for legal representation for clients at divorce and child custody hearings, mediations, and restraining order hearings. In addition, AACI's clients often need immigration law assistance. Asian (Vietnamese and Mandarin in particular) and Spanish language skills are especially helpful, but AACI's legal advocates and counselors can provide interpretation/translation as needed.</p>
+  <p>AACI has a need for a list of attorneys who would be willing to be contacted on an as-needed basis. Please note that AACI does not have any attorneys on staff and would not be able to supervise attorneys who take on these cases.</p>
+  <p>If you would like to be added to AACI's volunteer attorney list, please contact AACI's volunteer coordinator at (408) 975-2730 or 2400 Moorpark Avenue, Suite 300, San Jose, CA 95128.</p>
+  <p>
+    AACI: <a href="http://www.aaci.org/home.html" class="link-non-float">http://www.aaci.org/home.html</a><br />
+    Asian Women's Home: <a href="http://aacidvprogram.wordpress.com" class="link-non-float">http://aacidvprogram.wordpress.com</a>
+  </p>
+
+  <p>&nbsp;</p>
+  <h3 class="paragraph-header">
+    Asian Women's Shelter
+  </h3>
+  <p>The Asian Women's Shelter (AWS) provides immediate crisis services and connects domestic-violence survivors and children to legal, medical, and long-term services. AWS volunteers receive training to qualify them as California-certified domestic-violence counselors. AWS has trainings twice a year. To request a volunteer application or for more information, please contact the Volunteer Coordinator at (415) 751-7110.</p>
+  <p>More information about AWS can be found at: <a href="http://www.sfaws.org" class="link-non-float">http://www.sfaws.org</a></p>
+
+  <p>&nbsp;</p>
+  <h3 class="paragraph-header">
+    Corporate Pro Bono<br />
+    A joint initiative of the Association of Corporate Counsel and the Pro Bono Institute
+  </h3>
+  <p>The Corporate Pro Bono (CPBO) website is a good resource for in-house lawyers looking for volunteer opportunities: <a href="http://www.cpbo.org" class="link-non-float">http://www.cpbo.org</a></p>
+  <p>In addition, CPBO has collaborated with Association of Corporate Counsel Chapters, local nonprofit organizations, and local law firms, to develop the Onsite Pro Bono Clinic (Clinic in a Box) which provides in-house counsel with the opportunity to earn CLE credit while advising nonprofit organizations or small businesses. For more information about the Clinic, please call (202) 729-6699.</p>
+</div>

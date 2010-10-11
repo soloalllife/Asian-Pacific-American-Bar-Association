@@ -1,0 +1,34 @@
+---
+title: Mentorship Mixer Sept. 2010
+main_nav: Gallery
+
+images: [["IMG_014", "IMG_001", "IMG_002", "IMG_003", "IMG_004"],
+["IMG_005", "IMG_006", "IMG_007", "IMG_008", "IMG_009"],
+["IMG_010", "IMG_011", "IMG_012", "IMG_013", "IMG_015"],
+["IMG_016", "IMG_017", "IMG_018"]]
+---
+<div id="gallery" class='white-box'>
+  <div id='gallery-banner'></div>
+
+  <div style="clear:both"></div>
+
+  <div>
+    <a id="arr-prev" href="">prev</a>
+    <ul id="thumbnail">
+      <% @item[:images].each do |images| %>
+      <li>
+        <% images.each do |image| %>
+        <div class="mini-thumbnail" style='background: url("galleries/Mentorship-Mixer-Sep-2010/<%= image %>_thumbnail.gif");' onclick="changeImage('galleries/Mentorship-Mixer-Sep-2010/<%= image %>.jpg')"></div>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+    <a id="arr-next" href="">next</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    changeImage('galleries/Mentorship-Mixer-Sep-2010/<%= @item[:images][0][0] %>.jpg');
+  });
+</script>

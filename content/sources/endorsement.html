@@ -1,0 +1,53 @@
+--- 
+title: Endorsements
+main_nav: Committees
+
+officers: [["Thanh-Ngo", "Thanh Ngo", "Lone Chair, Chair<br /><a href='mailto:tngo@da.sccgov.org' class='link-non-float'>tngo@da.sccgov.org</a>", "<p>Thanh is currently a Deputy District Attorney in Santa Clara County where he prosecutes sexual assaults and child molestation.  Thanh was born in Vietnam and is a graduate of Claremont McKenna College and UCLA School of Law.  Thanh is active with many community groups such as Asian Law Alliance, BAYMEC, Vietnamese American Bar Association, and Community United Against Violence. Thanh has also taught Criminal Justice Studies at San Jose State University.</p>"]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">ENDORSEMENTS COMMITTEE</h3>
+
+  <% @item[:officers].each do |profile| %>
+  <div class="profile-section">
+    <div class="portrait">
+      <% if profile[0] == "" %>
+      <div class="fake-member-image">
+      </div>
+      <% else %>
+      <div>
+        <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+      </div>
+      <% end %>
+
+      <p>
+        <span class="highlight">
+          <%= profile[1] %>
+          <br />
+          <span class="small"><%= profile[2] %></span>
+        </span>
+      </p>
+    </div>
+
+    <div class="profile-detail">
+      <%= profile[3] %>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>
+  <% end %>
+</div>
+
+<div class="greybox">
+  <h3 class="paragraph-header">Judiciary & Endorsement Committee</h3>
+
+  <p>
+    This committee evaluates judicial applicants and candidates of legal positions (Judges, District Attorneys, City Attorneys and Public Defenders) seeking endorsement from the Asian Pacific American Bar Association of Silicon Valley. Interested applicants and candidates should contact the current Chair, Mr. Thanh Ngo to initiate the process.
+  </p>
+  <p>
+    Thanh Ngo<br />
+    Deputy District Attorney,<br />
+    Santa Clara County<br />
+    <a href="mailto:tngo@da.sccgov.org" class="link-non-float">tngo@da.sccgov.org</a>
+  </p>
+</div>

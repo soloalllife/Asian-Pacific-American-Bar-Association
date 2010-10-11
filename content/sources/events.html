@@ -1,0 +1,37 @@
+--- 
+title: Events
+main_nav: Events
+events: [["2010",
+[["Ongoing", [["", "<span class='gotham-font'>AACI Domestic Violence Volunteer Program</span>. Ongoing recruitment from our Community Service Committee. For more information or to participate, contact <a href='mailto:apabasv@gmail.com' class='link-non-float'>apabasv@gmail.com</a>"]]],
+["Nov", [["11", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change), Washington, D.C."]]],
+["Oct", [["15", "<span class='gotham-font'>APBA Scholarship and and Commitment to Diversity Awards Banquet</span>, Four Seasons, E. Palo Alto. Click here to register."], ["6 - 8", "<span class='gotham-font'>K&L Gates LLP & CCWC, 6th Annual Career Strategies Conference</span>, New York Hilton 'Renaissance' New York City."]]],
+["Sep", [["13", "<span class='gotham-font'>Court Interpreter Seminar @ Morrison and Forester, Palo Alto</span>. Hosted by our Education Committee. Contact: Cammie Chen, <a href='mailto:cwc@mchughchenlaw.com' class='link-non-float'>cwc@mchughchenlaw.com</a>"]]],
+["Aug", [["21", "<span class='gotham-font'>Mock Interview / Resume Review Program</span>. @ Fenwick & West, Mountain View, 9:00 AM. For law students and young lawyers. Hosted by our Mentorship Committee. Contact: Genelle Ng, <a href='mailto:gng@fenwick.com' class='link-non-float'>gng@fenwick.com</a>"], ["17", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change), Charlotte, NC."], ["16", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change), Dallas, TX."]]],
+["Jul", [["22", <span class='gotham-font'>APBASV In-House/Law Firm Mixer</span>, 5:30 pm - TBD, Lavanda Restaurant, 185 University Avenue, Palo Alto, CA."]]],
+["Jun", [["4 - 5", "<span class='gotham-font'>NAPABA Western Regional Conference</span>, San Francisco, CA."]]],
+["May", [["11", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change), Atlanta, GA."]]],
+["Apr", [["20", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change), Chicago, IL."], ["19", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change), San Francisco, CA."]]],
+["Jan", [["12", "<span class='gotham-font'>San Jose Workshop</span> Hosted by Asian Law Alliance, 6:30 pm to 8:30 pm, Asian Americans for Community Involvement, 2400 Moorpark Avenue, Room 210, San Jose, CA. To RSVP, contact Jacquelyn Maruhashi at <a href='mailto:alacensus@aol.com' class='link-non-float'>alacensus@aol.com</a> or call (408) 287-9710."], ["10", "<span class='gotham-font'>Alameda County Workshop</span> Hosted by East Bay Asian Voter Education Consortium , 12:30 pm to 2:30 pm (lunch provided), Oakland Asian Cultural Center, Conference Room 2, 388 Ninth Street, Oakland, CA 94607. To RSVP, contact Emily Chang at <a href='mailto:chang.emily@sbcglobal.net' class='link-non-float'>chang.emily@sbcglobal.net</a> or call (925) 933-6778."], ["9", "<span class='gotham-font'>San Francisco Workshop Hosted</span> by Asian Law Caucus, 2:30 pm to 4:30 pm, Rosenberg Foundation, Conference Room, 131 Steuart Street, Suite 650, San Francisco, CA 94105. To RSVP, contact Carlo de la Cruz at <a href='mailto:carlod@asianlawcaucus.org' class='link-non-float'>carlod@asianlawcaucus.org</a> or call (415) 896-1701 ext. 121."]]]]]]
+---
+<h3 class="main-header">Membership</h3>
+
+<div class='greybox-event'>
+  <% @item[:events].each do |year| %>
+  <div class="event-year"><%= year[0] %></div>
+
+  <% year[1].each do |month| %>
+  <div class="event-month">
+    <h3 class="paragraph-header"><%= month[0] %></h3>
+    <div style="clear:both"></div>
+    <table>
+      <% month[1].each do |day| %>
+      <tr>
+        <td class="event-date"><%= day[0] %></td>
+        <td class="event-detail"><p><%= day[1] %></p></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+  <% end %>
+  <% end %>
+</div>

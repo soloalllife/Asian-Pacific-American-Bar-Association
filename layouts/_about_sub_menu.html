@@ -1,0 +1,23 @@
+<ul id='sub_nav'>
+  <li>
+    <a href='about.html' <%= "class='nav-selected'" if @item[:title] == 'Who We Are' && @item[:main_nav] == 'About' %> >Who We Are</a>
+  </li>
+  <li>
+    <a href='logo.html' <%= "class='nav-selected'" if @item[:title] == 'APABASV Logo' && @item[:main_nav] == 'About' %> >APABASV Logo</a>
+  </li>
+  <li>
+    <a href='presidents_message.html' <%= "class='nav-selected'" if @item[:title] == 'President\'s Message' && @item[:main_nav] == 'About' %> >President's Message</a>
+  </li>
+  <li>
+    <a href='officers_board.html' <%= "class='nav-selected'" if @item[:title] == 'Officers / Board' && @item[:main_nav] == 'About' %> >Officers / Board</a>
+  </li>
+  <li>
+    <a href='past_presidents.html' <%= "class='nav-selected'" if @item[:title] == 'Past Presidents' && @item[:main_nav] == 'About' %> >Past Presidents</a>
+  </li>
+  <li>
+    <a href='opportunities.html' <%= "class='nav-selected'" if @item[:title] == 'Career Opportunities' && @item[:main_nav] == 'About' %> >Career Opportunities</a>
+  </li>
+  <li>
+    <a href='contact.html' <%= "class='nav-selected'" if @item[:title] == 'Contact Us' && @item[:main_nav] == 'About' %> >Contact Us</a>
+  </li>
+</ul>

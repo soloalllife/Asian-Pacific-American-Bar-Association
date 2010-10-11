@@ -1,0 +1,136 @@
+ul#sub_nav {
+  float: left;
+  clear: left;
+  width: 140px;
+  padding-left: 10px;
+}
+
+ul#sub_nav li {
+  border-bottom: 1px solid #242e71;
+  height: 22px;
+}
+
+ul#sub_nav li.gallery-sub-nav {
+  height: 40px;
+}
+
+ul#sub_nav li a {
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.greybox {
+  float: right;
+  width: 670px;
+  background: #d2d3d5;
+  margin: 15px 0 15px 30px;
+  padding: 10px 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.greybox p {
+  margin-top: 10px;
+}
+
+#social_links_about {
+  width: 660px;
+  float: right;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+#social_links_about a {
+  margin-left: 20px;
+  float: right;
+}
+
+#social_links_contact {
+  width: 660px;
+  float: right;
+  margin-top: -30px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+}
+
+#social_links_contact a {
+  margin-left: 20px;
+  float: right;
+}
+
+.white-box {
+  float: right;
+  width: 700px;
+}
+
+.white-box p {
+  margin-top: 10px;
+}
+
+
+.logo-detail {
+  width: 470px;
+  float: left;
+}
+
+.logo-portrait {
+  width: 150px;
+  float: right;
+  margin: 10px;
+  padding: 15px;
+}
+
+.profile-detail {
+  width: 480px;
+  margin-left: 10px;
+  float: right;
+}
+
+.profile-detail p:first-child {
+  margin-top: 0px;
+}
+
+.profile-section {
+  margin-top: 20px;
+}
+
+.profile-section .portrait {
+  min-height: 60px;
+}
+
+.about-profile h3 {
+  float: none;
+}
+
+.white-box table {
+  width: 660px;
+}
+
+.white-box table th, .white-box table td {
+  font-weight: bold;
+}
+
+.white-box table th {
+  width: 100px;
+}
+
+.white-box table th:first-child {
+  width: 400px;
+}
+
+table#past_president td {
+  border-top: 1px solid #777;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+table#past_president th {
+  font-size: 24px;
+}
+
+#past_president .small {
+  font-size: 12px;
+  line-height: 14px;
+}

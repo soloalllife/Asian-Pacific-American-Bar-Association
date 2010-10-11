@@ -1,0 +1,59 @@
+---
+title: Mentorship
+main_nav: Committees
+
+officers: [["", "Sallie Kim", "Co-Chair<br /><a href='mailto:skim@gcalaw.com' class='link-non-float'>skim@gcalaw.com</a>", "<p>Sallie Kim practices litigation at GCA Law Partners LLP in the areas of employment, general commercial litigation, and intellectual property litigation, representing both individuals and companies. Sallie graduated from Princeton University, and earned her law degree at Stanford Law School. She is also a current board member of APBA.</p>"],
+["Brandon-Kimura", "Brandon Kimura", "Co-Chair<br /><a href='mailto:bkimura@cooley.com' class='link-non-float'>bkimura@cooley.com</a>", "<p>Brandon is an associate in Cooley's Litigation department. His practice involves general civil litigation matters in federal and state courts covering a variety of areas, including commercial contracts, antitrust and business crimes. Brandon earned his J.D. from Santa Clara School of and a B.A. in both Political Science and American History from the University of Hawaii at Hilo.</p>"],
+["Genelle-Ng", "Genelle Ng", "Co-Chair<br /><a href='mailto:gng@fenwick.com' class='link-non-float'>gng@fenwick.com</a>", "<p>Genelle Ng is an associate in the Technology Transactions group at Fenwick & West. Her practice involves representing clients on intellectual property matters in connection with mergers and acquisitions, as well as negotiating and drafting technology license agreements in various spaces including computer software, communications, and biotechnology. Genelle graduated from University of California, Berkeley, and earned her law degree at Santa Clara University. This is her second year serving as Secretary of APBA.</p>"],
+["", "David Cheng", "Co-Chair<br /><a href='mailto:dcheng@nixonpeabody.com' class='link-non-float'>dcheng@nixonpeabody.com</a>", "<p>David is a the Chair and Managing Partner of Nixon Peabody's Chine and Asia Pacific Practice, as well as a partner in the firm's Global Tax Practice Group. David represents a host of US and Chinese companies in cross-border transactions, including M&A, IPO, IP, Corporate financing and cross-border licensing. David has previously served as a board member of APBA.</p>"]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">Mentorship COMMITTEE</h3>
+
+  <div class='about-profile'>
+    <% @item[:officers].each do |profile| %>
+    <div class="profile-section">
+      <div class="portrait">
+        <% if profile[0] == "" %>
+        <div class="fake-member-image">
+        </div>
+        <% else %>
+        <div>
+          <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+        </div>
+        <% end %>
+
+        <p>
+          <span class="highlight">
+            <%= profile[1] %>
+            <br />
+            <span class="small"><%= profile[2] %></span>
+          </span>
+        </p>
+      </div>
+
+      <div class="profile-detail">
+        <%= profile[3] %>
+      </div>
+    </div>
+
+    <div style="clear:both"></div>
+    <% end %>
+  </div>
+</div>
+
+<div class="greybox">
+  <p>
+    The Mentorship Committee is dedicated to connecting experienced practitioners with law students and new lawyers to provide them with guidance and advice as they develop their careers. To accomplish this goal, the Mentorship Committee created the "pod" system where a mix of experienced practitioners, new lawyers and law students are assigned to small groups. The system is designed to allow members to form stronger connections and create a more structured mentorship process. In addition to the "pod" system, the Mentorship Committee also sponsors career development workshops and networking events.
+  </p>
+  <p>
+    Welcome to APBA's Mentorship Committee! We hope that you will become active in mentoring activities with APABA Silicon Valley both to benefit from mentoring and to provide mentoring to younger lawyers. We welcome your input and participation, and hope to see you at upcoming events!
+  </p>
+  <p>
+    In 2010, the Mentorship Committee organized mentorship families for law students and attorneys, as well as various networking events for the law students and recent law school graduates. The Mentorship Committee also recently sponsored and organized a mock interview and resume review program, with over 40 students participating from many of the bay area law schools, as well as 15 attorneys. The program also included an insightful interview tip presentation by Mikio Ishimaru and Sallie Kim, as well as a networking mixer. Other upcoming events being considered and organized include a professional development event for junior and mid-level attorneys.
+  </p>
+  <p>
+    For a number of years, the Mentorship Committee has been dedicated to fostering relationships between local bay area law students and attorneys. With the help of Santa Clara University APALSA, the Mentorship Committee has organized mentorship pairings, various networking events and mixers (at least twice a year), as well as has encouraged and helped foster informal gatherings between students and attorneys.
+  </p>
+</div>

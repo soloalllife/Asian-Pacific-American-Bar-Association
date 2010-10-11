@@ -1,0 +1,50 @@
+---
+title: Education
+main_nav: Committees
+
+boards: [["", "Lisa Cummins", "Co-Chair<br /><a href='mailto:lcummins@campbellwarburton.com' class='link-non-float'>lcummins@campbellwarburton.com</a>", ""],
+["Cammie-Chen", "Cammie Chen", "Co-Chair<br /><a href='mailto:cwc@mchughchenlaw.com' class='link-non-float'>cwc@mchughchenlaw.com</a>", "<p>Cammie Chen is a partner at the Law Offices of McHugh & Chen, APC, a litigation firm in San Jose which represents clients with disputes concerning insurance coverage, personal injury, employment law, elder law, and environmental law. Cammie is a member of the Santa Clara County Bar Association and a board member and former president of the Asian Pacific Bar Association of the Silicon Valley.</p>"]]
+---
+
+<div class='white-box'>
+  <h3 class="main-header">Education COMMITTEE</h3>
+  <div style="clear:both"></div>
+
+  <% @item[:boards].each do |profile| %>
+  <div class="profile-section">
+    <div class="portrait">
+      <% if profile[0] == "" %>
+      <div class="fake-member-image">
+      </div>
+      <% else %>
+      <div>
+        <img src='galleries/BoardMembers/<%= profile[0] %>.jpg' />
+      </div>
+      <% end %>
+
+      <p>
+        <span class="highlight">
+          <%= profile[1] %>
+          <br />
+          <span class="small"><%= profile[2] %></span>
+        </span>
+      </p>
+    </div>
+
+    <div class="profile-detail">
+      <%= profile[3] %>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>
+  <% end %>
+</div>
+
+<div class="greybox">
+  <p>
+    The Education Committee develops and coordinates seminars on topics of interest to the APABA membership. APABA is an approved   State Bar of California provider of Minimum Continuing Legal Education.
+  </p>
+  <p>
+    The Education Committee holds an annual APA Judges Luncheon providing one hour MCLE for APA Judges and Attorneys. This usually occurs in the Fall (November) of the year.
+  </p>
+</div>

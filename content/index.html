@@ -1,0 +1,94 @@
+--- 
+title: Home
+main_nav: Home
+events: [["2010",
+[["Ongoing", [["", "", "<span class='gotham-font'>AACI Domestic Violence Volunteer Program.</span><br />Ongoing recruitment from our Community Service Committee.<br />For more information or to participate, contact <a href='mailto:apabasv@gmail.com' class='link-non-float'>apabasv@gmail.com</a>"]]],
+["11", [["11", "", "<span class='gotham-font'>Regional Networking Reception</span><br />(Date Subject to Change), Washington, D.C."]]],
+["10", [["15", "", "<span class='gotham-font'>APBA Scholarship and and Commitment to Diversity Awards Banquet</span>,<br />Four Seasons, E. Palo Alto.<br />Click here to register."], ["6", "8", "<span class='gotham-font'>K&L Gates LLP & CCWC, 6th Annual Career Strategies Conference</span>,<br />New York Hilton 'Renaissance' New York City."]]],
+["9", [["13", "", "<span class='gotham-font'>Court Interpreter Seminar @ Morrison and Forester, Palo Alto</span>.<br />Hosted by our Education Committee.<br />Contact: Cammie Chen, <a href='mailto:cwc@mchughchenlaw.com' class='link-non-float'>cwc@mchughchenlaw.com</a>"]]],
+["8", [["21", "", "<span class='gotham-font'>Mock Interview / Resume Review Program</span>.<br />@ Fenwick & West, Mountain View, 9:00 AM.<br />For law students and young lawyers.<br />Hosted by our Mentorship Committee.<br />Contact: Genelle Ng, <a href='mailto:gng@fenwick.com' class='link-non-float'>gng@fenwick.com</a>"], ["17", "", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change),<br />Charlotte, NC."], ["16", "", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change),<br />Dallas, TX."]]],
+["7", [["22", "", <span class='gotham-font'>APBASV In-House/Law Firm Mixer</span>,<br />5:30 pm - TBD, Lavanda Restaurant,<br />185 University Avenue, Palo Alto, CA."]]],
+["6", [["4", "5", "<span class='gotham-font'>NAPABA Western Regional Conference</span>,<br />San Francisco, CA."]]],
+["5", [["11", "", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change),<br />Atlanta, GA."]]],
+["4", [["20", "", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change),<br />Chicago, IL."], ["19", "", "<span class='gotham-font'>Regional Networking Reception</span> (Date Subject to Change),<br />San Francisco, CA."]]],
+["1", [["12", "", "<span class='gotham-font'>San Jose Workshop</span><br />Hosted by Asian Law Alliance, 6:30 pm to 8:30 pm,<br />Asian Americans for Community Involvement, 2400 Moorpark Avenue, Room 210, San Jose, CA.<br />To RSVP, contact Jacquelyn Maruhashi at <a href='mailto:alacensus@aol.com' class='link-non-float'>alacensus@aol.com</a> or call (408) 287-9710."], ["10", "", "<span class='gotham-font'>Alameda County Workshop</span><br />Hosted by East Bay Asian Voter Education Consortium, 12:30 pm to 2:30 pm (lunch provided),<br />Oakland Asian Cultural Center, Conference Room 2, 388 Ninth Street, Oakland, CA 94607.<br />To RSVP, contact Emily Chang at <a href='mailto:chang.emily@sbcglobal.net' class='link-non-float'>chang.emily@sbcglobal.net</a> or call (925) 933-6778."], ["9", "", "<span class='gotham-font'>San Francisco Workshop Hosted</span><br />by Asian Law Caucus, 2:30 pm to 4:30 pm,<br />Rosenberg Foundation, Conference Room, 131 Steuart Street, Suite 650, San Francisco, CA 94105.<br />To RSVP, contact Carlo de la Cruz at <a href='mailto:carlod@asianlawcaucus.org' class='link-non-float'>carlod@asianlawcaucus.org</a> or call (415) 896-1701 ext. 121."]]]]]]
+
+banners: ["Home_Page_1", "Home_Page_2", "Home_Page_3", "Home_Page_4", "Home_Page_5"]
+---
+
+<div id='banner'>
+  <% @item[:banners].each do |image| %>
+  <div id="banner_image" style="background: url('galleries/<%= image %>.jpg'); <%= 'display: none;' unless image == @item[:banners][0] %>"></div>
+  <% end %>
+</div>
+
+<div id='dates_events'>
+  <h3 id="date_events_header" class="main-header">Dates & Events</h3>
+
+  <% @item[:events].each do |year| %>
+  <% year[1].each do |month| %>
+  <% month[1].each do |day| %>
+  <div class='date_events_item'>
+    <h4 class='date'>
+      <% if month[0] == 'Ongoing' %>
+      Ongoing
+      <% else %>
+      <%= month[0] + "." + day[0] + "." + year[0]%>
+      <% if day[1] != '' %>
+      <%= " - " + month[0] + "." + day[1] + "." + year[0]%>
+      <% end %>
+      <% end %>
+    </h4>
+    <p><%= day[2] %></p>
+  </div>
+  <% end %>
+  <% end %>
+  <% end %>
+</div>
+
+<div id='social_links'>
+  <a href='http://www.facebook.com/group.php?gid=131858536851'>
+    <img src='images/facebook_button.gif' />
+  </a>
+  <!--
+  <a href='#'>
+    <img src='images/twitter_button.gif' />
+  </a>
+  -->
+  <a href='contact.html'>
+    <img src='images/email_button.gif' />
+  </a>
+</div>
+
+<div id='news_updates'>
+  <h3 class="main-header">News & Updates</h3>
+  <div class='greybox-home'>
+    <p>
+      <a href="news_vijay_c_gandhi.html" class="link-non-float sub-header">Vijay C. Gandhi Appointed As Federal Magistrate Judge</a>
+    </p>
+    <p>
+      Today, Vijay "Jay" C. Gandhi was sworn in as a Magistrate Judge for the United States District Court for the Central District of California. Judge Gandhi is the first Indian American federal judge in...
+    </p>
+
+    <p>
+      <a href="news_koh.html" class="link-non-float sub-header">U.S. Senate Confirmation of Judge Lucy H. Koh</a>
+    </p>
+    <p>
+      The United States Senate today confirmed the Honorable Lucy H. Koh to the United States District Court for the Northern District of California. Judge Koh is the first Asian Pacific American federal district court judge in...
+    </p>
+
+    <p>
+      <a href="news_Justice_Tani_Cantil-Sakauye.html" class="link-non-float sub-header">APBA-SV Applauds the Nomination of Justice Tani Cantil-Sakauye</a>
+    </p>
+    <p>
+      The Asian Pacific Bar Association of Silicon Valley applauds Governor Schwarzenegger's nomination of Justice Tani Cantil-Sakauye of the Court of Appeals as the next Chief Justice of the California Supreme Court...
+    </p>
+
+    <p>
+      <a href="news_Justice_Tani_Cantil-Sakauye_Confirmation.html" class="link-non-float sub-header">APBA-SV Applauds Unanimous Confirmation of Justice Tani Cantil-Sakauye</a>
+    </p>
+    <p>
+      The Asian Pacific Bar Association of Silicon Valley applauds The Commission on Judicial Appointments’ unanimous confirmation of Justice Tani Cantil-Sakauye to be the next Chief Justice of the California Supreme Court...
+    </p>
+  </div>
+</div>
