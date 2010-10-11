@@ -33,6 +33,11 @@ ul#sub_nav li a {
 
 .greybox p {
   margin-top: 10px;
+  width: 640px;
+}
+
+.greybox h3 {
+	width: 640px;
 }
 
 #social_links_about {
@@ -43,7 +48,7 @@ ul#sub_nav li a {
 }
 
 #social_links_about a {
-  margin-left: 20px;
+  margin-left: 10px;
   float: right;
 }
 
@@ -67,10 +72,16 @@ ul#sub_nav li a {
 
 .white-box p {
   margin-top: 10px;
+  width: 660px;
 }
 
 
 .logo-detail {
+  width: 470px;
+  float: left;
+}
+
+.logo-detail p {
   width: 470px;
   float: left;
 }
@@ -90,6 +101,10 @@ ul#sub_nav li a {
 
 .profile-detail p:first-child {
   margin-top: 0px;
+}
+
+.profile-detail p {
+	width: 460px;
 }
 
 .profile-section {

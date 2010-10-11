@@ -72,21 +72,19 @@ span.small {
 
 #container ul#nav {
   float: right;
-  margin: 30px 0px 0 0;
+  margin: 30px -10px 0 0;
   position: relative;
   z-index: 2;
 }
 
 #container ul#nav li {
   float: left;
-  margin: 0 10px 0 0;
-  padding: 0 10px;
-  min-width: 55px;
+  padding: 0 24px;
 }
 
 #container ul#nav li a {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 #container ul#nav li:last-child {
@@ -152,11 +150,12 @@ ul#thumbnail li {
 
 #dates_events {
   float: left;
-  width: 290px;
+  width: 280px;
   height: 400px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
   overflow: hidden;
   overflow-y: scroll;
+  position: relative;
 }
 
 .date_events_item {
@@ -232,6 +231,8 @@ ul#thumbnail li {
 
 .greybox-home p {
   margin-top: 10px;
+  width: 840px;
+
 }
 
 /* Footer */
@@ -293,6 +294,7 @@ li.list-inline {
   color: #58585A;
   font-size: 11px;
   font-family: helveticaneue,arial,sans-serif;
+  clear: left;
 }
 
 #arr-next {
@@ -455,18 +457,33 @@ ul.career-list li {
 
 #social_links {
   float: left;
-  margin-left: 520px;
+  margin-left: 550px;
 }
 
 #social_links a {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 8px;
   clear: none;
 }
 
 .new_alert {
   font-style: italic;
-  background: red;
   padding: 5px;
-  color: yellow;
+  color: #913059;
+}
+
+#pres_message {
+	width: 730px;
+	float: right;
+	clear: none;
+	margin-top: -220px;
+}
+
+#pres_message p {
+	width: 730px;
+}
+
+.pres_pic {
+	float: left;
+	clear: left;
 }
